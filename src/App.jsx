@@ -1,13 +1,17 @@
-
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import HomePage from "./pages/HomePage/HomePage"
+import Layout from "./components/LayoutRouting/Layout"
 function App() {
-  
+
 
   return (
-    <>
-      <h1>allemansrätten</h1>
-    </>
+   <Router>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route path="/" element={<HomePage/>}/>
+        </Route>
+      </Routes>
+   </Router>
   )
 }
 

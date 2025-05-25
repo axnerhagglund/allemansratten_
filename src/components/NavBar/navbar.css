@@ -1,0 +1,18 @@
+.mobile-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    padding: 1rem 1rem;
+}
+
+.ri-menu-4-line {
+    font-size: 2.5rem;
+}
+
+.ri-menu-4-line:hover,
+.ri-menu-4-line:focus {
+    color: gray;
+    cursor: pointer;
+}
