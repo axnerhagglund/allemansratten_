@@ -5,7 +5,7 @@ function NavBar() {
     <>
     <section className="mobile-view">
         <h1>Logo</h1>
-        <i class="ri-menu-4-line"></i>
+        <i className="ri-menu-4-line"></i>
     </section>
     
     </>

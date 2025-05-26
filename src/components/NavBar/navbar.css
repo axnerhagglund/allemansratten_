@@ -16,3 +16,7 @@
     color: gray;
     cursor: pointer;
 }
+
+h1 {
+    font-family: var(--font-outfit)
+}
