@@ -1,13 +1,10 @@
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu"
 import "./navbar.css"
 
 function NavBar() {
   return (
     <>
-    <section className="mobile-view">
-        <h1>Logo</h1>
-        <i className="ri-menu-4-line"></i>
-    </section>
-    
+   <HamburgerMenu />
     </>
   )
 }

@@ -1,0 +1,46 @@
+.mobile-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem 1rem;
+}
+
+.ri-menu-4-line {
+    font-size: 2.5rem;
+}
+
+.ri-menu-4-line:hover,
+.ri-menu-4-line:focus {
+    color: gray;
+    cursor: pointer;
+}
+
+.mobile-view-logo {
+    font-family: var(--font-outfit);
+    font-size: 2rem;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    background: #88A376;
+    min-height: 65vh;
+    z-index: 20;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: bottom 2s ease, opacity 1s ease;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay.open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.overlay__list {
+    display: flex;
+}
+
+
