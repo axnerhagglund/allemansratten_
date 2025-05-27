@@ -12,7 +12,7 @@ function HamburgerMenu() {
     <>
      <section className="mobile-view">
         <h1 className="mobile-view-logo">Logo</h1>
-        <i onClick={toggleview} className="ri-menu-4-line"></i>
+        <i onClick={toggleview} className={isOpen ? "ri-close-line" : "ri-menu-4-line"}></i>
     </section>
     
         <section className={`overlay ${isOpen ? "open" : ""}`}>

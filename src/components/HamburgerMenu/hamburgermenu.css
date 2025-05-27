@@ -8,11 +8,17 @@
 
 .ri-menu-4-line {
     font-size: 2.5rem;
+    color:#88A376;
+}
+.ri-close-line {
+    font-size: 2.5rem;
+    color:#88A376;
+    
 }
 
 .ri-menu-4-line:hover,
 .ri-menu-4-line:focus {
-    color: gray;
+    
     cursor: pointer;
 }
 
@@ -29,7 +35,7 @@
     z-index: 20;
     transform: translateY(100%);
     opacity: 0;
-    transition: bottom 2s ease, opacity 1s ease;
+    transition: transform 0.8s ease, opacity 0.8s ease;
     bottom: 0;
     left: 0;
 }
@@ -41,6 +47,18 @@
 
 .overlay__list {
     display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.overlay__list-item {
+    font-family:var(--font-outfit);
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
 }
 
 
