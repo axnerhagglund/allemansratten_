@@ -6,25 +6,21 @@
     padding: 1rem 1rem;
 }
 
-.ri-menu-4-line {
-    font-size: 2.5rem;
-    color:#88A376;
-}
+.ri-menu-4-line,
 .ri-close-line {
     font-size: 2.5rem;
-    color:#88A376;
-    
+    color:var(--color-dark-gray);
 }
 
 .ri-menu-4-line:hover,
-.ri-menu-4-line:focus {
-    
+.ri-menu-4-line:focus { 
     cursor: pointer;
 }
 
 .mobile-view-logo {
     font-family: var(--font-outfit);
     font-size: 2rem;
+    color:var(--color-dark-gray);
 }
 
 .overlay {
@@ -34,7 +30,7 @@
   width: 95%;
   max-width: 600px;
   min-height: 65vh;
-  background: #88A376;
+  background: var(--color-dark-gray);
   gap: 1.5rem;
   opacity: 0;
   visibility: hidden;
@@ -63,12 +59,31 @@
 .ri-arrow-right-s-line {
     font-size: 2rem;
     align-self: center;
+    color: var(--color-light-blue);
 }
 .overlay__list-item {
     font-family:var(--font-outfit);
     font-weight: 600;
     font-size: 1.4rem;
-    color: black;
+    color: var(--color-light-blue);
+}
+
+.backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    background: var(--transparent-black);
+
+}
+
+.backdrop.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (min-width: 675px ) {
@@ -85,6 +100,12 @@
      .overlay.open {
     transform: translateX(0) translateY(-50%);
   }
+}
+
+@media (min-width: 900px) {
+    .overlay{
+        display: none;
+    }
 }
 
 

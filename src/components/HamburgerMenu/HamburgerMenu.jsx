@@ -5,7 +5,7 @@ function HamburgerMenu() {
     const [ isOpen, setIsOpen ] = useState(false)
     function toggleview(){ 
         setIsOpen((prev) => !prev)
-        console.log(isOpen)
+        
     }
     const [ screenWidth, setScreenWidth ] = useState(window.innerWidth)
     useEffect(()=> {
@@ -20,9 +20,10 @@ function HamburgerMenu() {
     <>
      <section className="mobile-view">
         <h1 className="mobile-view-logo">Logo</h1>
-        <i onClick={toggleview} className={isOpen ? "ri-close-line" : "ri-menu-4-line"}></i>
+        <i onClick={toggleview} className="ri-menu-4-line"></i>
     </section>
-        
+        <div onClick={toggleview} className={`backdrop ${isOpen ? "active" : ""}`}></div>
+
         <section className={`overlay ${isOpen ? "open" : ""}`}>
             
             <ul className="overlay__list">

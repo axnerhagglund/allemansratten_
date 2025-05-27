@@ -7,3 +7,14 @@
 body {
     min-height: 100vh;
 }
+
+:root {
+  --color-yellow-orange: #F4AE45;
+  --color-orange: #F17C5D;
+  --color-light-blue: #89CFF0;
+  --color-green: #88A376;
+  --color-light-yellow: #F4D35E;
+  --color-dark-gray: #2C2C2C;
+  --color-white: #FFFFFF;
+  --transparent-black : rgba(0, 0, 0, 0.2);
+}
