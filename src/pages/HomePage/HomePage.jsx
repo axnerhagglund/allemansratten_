@@ -1,9 +1,10 @@
+import Hero from "../../components/Hero/Hero"
 import "./homepage.css"
 
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <Hero/>
   )
 }
 
