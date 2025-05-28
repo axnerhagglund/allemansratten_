@@ -5,17 +5,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
+    position: relative;
+    z-index: 101;
+
 }
 
 .hero__title{
     font-size: 2rem;
-    
-    
-    
+    font-weight: 500;
 }
 
 .hero__subtitle {
     font-size: 3rem;
 }
 
+.hero__image {
+    width: 100%;
+    margin-top: 6rem;
+}
+.bird {
+    width: 40px;
+    z-index: 100;
+    position: relative;
+}
+
+.birds {
+    position: absolute;
+
+}
