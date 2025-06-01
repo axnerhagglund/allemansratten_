@@ -20,7 +20,19 @@ function NavBar() {
     <>
      <section className="mobile-view">
         <h1 className="mobile-view-logo">Logo</h1>
+        {screenWidth > 900 ? 
+        <div  className="desktop__menu">
+        <ul className="desktop__menu-list">
+            <li className="desktop__menu--item">Om oss</li>
+            <li className="desktop__menu--item">Vårt mål</li>
+            <li className="desktop__menu--item">Hem</li>
+        </ul>
+        <button className="desktop__menu--button">Kontakt</button> 
+        </div>
+         : ""}
+        
         <i onClick={toggleview} className="ri-menu-4-line"></i>
+        
     </section>
         <div onClick={toggleview} className={`backdrop ${isOpen ? "active" : ""}`}></div>
 

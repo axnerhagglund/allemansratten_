@@ -80,6 +80,26 @@
     background: var(--transparent-black);
 
 }
+/* desktopmenu */
+
+.desktop__menu {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.desktop__menu-list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.desktop__menu--item {
+    font-size: 1.2rem;
+    font-family: var(--font-outfit);
+}
+
+
 
 .backdrop.active {
     opacity: 1;
@@ -104,6 +124,9 @@
 
 @media (min-width: 900px) {
     .overlay{
+        display: none;
+    }
+    .ri-menu-4-line {
         display: none;
     }
 }
