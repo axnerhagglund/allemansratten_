@@ -1,14 +1,19 @@
 
 
 .hero {
+    min-height: 40vh;
     font-family: var(--font-outfit);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
-    position: relative;
-    z-index: 101;
+    justify-content: center;
+}
 
+.hero_img {
+    min-height: 60vh;
+    background-image: url(/images/heroimage.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .hero__title{
@@ -22,15 +27,9 @@
 
 .hero__image {
     width: 100%;
-    margin-top: 6rem;
-}
-.bird {
-    width: 40px;
-    z-index: 100;
-    position: relative;
-}
-
-.birds {
-    position: absolute;
+    background-position: center;
+    
+    
 
 }
+
