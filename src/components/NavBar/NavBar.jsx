@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./navbar.css"
 import { useEffect, useState } from "react"
 function NavBar() {
@@ -19,13 +20,17 @@ function NavBar() {
     
     <>
      <section className="mobile-view">
+        <Link className="links" to={"/"}>
         <h1 className="mobile-view-logo">Logo</h1>
+        </Link>
         {screenWidth > 900 ? 
         <div  className="desktop__menu">
         <ul className="desktop__menu-list">
-            <li className="desktop__menu--item">Om oss</li>
-            <li className="desktop__menu--item">Vårt mål</li>
-            <li className="desktop__menu--item">Hem</li>
+            <Link className="links"  to={"/about"}>
+            <a  className="desktop__menu--item">Om oss</a>
+            </Link>
+            <a className="desktop__menu--item">Vårt mål</a>
+            <a className="desktop__menu--item">Allemansrätten</a>
         </ul>
         <button className="desktop__menu--button">Kontakt</button> 
         </div>
@@ -39,10 +44,15 @@ function NavBar() {
         <section className={`overlay ${isOpen ? "open" : ""}`}>
             
             <ul className="overlay__list">
-                <i onClick={toggleview} className={screenWidth < 675 ? "ri-arrow-down-s-line" :"ri-arrow-right-s-line"}></i>
+                <i onClick={toggleview} className={screenWidth < 675 ? "ri-arrow-down-s-line" :"ri-arrow-right-s-line"}></i>    
+                <Link onClick={toggleview} className="links" to={"/"}>
                 <li className="overlay__list-item">Hem</li>
-                <li className="overlay__list-item">Om oss</li>
+                </Link>
+                <Link onClick={toggleview} className="links"  to={"/about"}>
+                <a className="overlay__list-item">Om oss</a>
+                </Link>
                 <li className="overlay__list-item">Vårt mål</li>
+                <li className="overlay__list-item">Allemansrätten</li>
             </ul>
         </section>
         
