@@ -1,19 +1,17 @@
 
 
 .hero {
-    min-height: 40vh;
+    min-height: 100vh;
     font-family: var(--font-outfit);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-image: url(/images/heroimage.png);
+    background-position:center center;
+    background-size: cover;
+    
 }
 
-.hero_img {
-    min-height: 60vh;
-    background-image: url(/images/heroimage.png);
-    background-position: center;
-    background-size: cover;
+.hero-title-container {
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .hero__title{
@@ -27,11 +25,11 @@
     color: var(--color-dark-gray);
 }
 
-.hero__image {
-    width: 100%;
-    background-position: center;
-    
-    
+ @media (max-width: 600px) {
+  .hero {
+    background-image: url("/images/mobile_crop.png");
+    background-position: center center; 
+   }
+} 
 
-}
 
