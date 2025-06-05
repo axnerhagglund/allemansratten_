@@ -4,8 +4,11 @@
     min-height: 100vh;
     font-family: var(--font-outfit);
     background-image: url(/images/heroimage.png);
-    background-position:center center;
-    background-size: cover;
+    background-position: center bottom;
+   background-size: contain;
+   background-repeat: no-repeat;
+    
+    
     
 }
 
@@ -25,10 +28,11 @@
     color: var(--color-dark-gray);
 }
 
- @media (max-width: 600px) {
+ @media (max-width: 550px) {
   .hero {
     background-image: url("/images/mobile_crop.png");
-    background-position: center center; 
+    background-position: center bottom; 
+    background-size: contain;
    }
 } 
 
