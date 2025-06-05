@@ -29,7 +29,9 @@ function NavBar() {
             <Link className="links"  to={"/about"}>
             <a  className="desktop__menu--item">Om oss</a>
             </Link>
+            <Link className="links" to={"/vårtmål"}>
             <a className="desktop__menu--item">Vårt mål</a>
+            </Link>
             <a className="desktop__menu--item">Allemansrätten</a>
         </ul>
         <button className="desktop__menu--button">Kontakt</button> 
@@ -51,7 +53,9 @@ function NavBar() {
                 <Link onClick={toggleview} className="links"  to={"/about"}>
                 <a className="overlay__list-item">Om oss</a>
                 </Link>
+                <Link onClick={toggleview}  className="links" to={"/vårtmål"}>
                 <li className="overlay__list-item">Vårt mål</li>
+                </Link>
                 <li className="overlay__list-item">Allemansrätten</li>
             </ul>
         </section>
