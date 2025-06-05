@@ -13,7 +13,7 @@
 }
 
 .hero-title-container {
-    margin-top: 2rem;
+    
     text-align: center;
 }
 
@@ -28,11 +28,12 @@
     color: var(--color-dark-gray);
 }
 
- @media (max-width: 550px) {
+ @media (max-width: 800px) {
   .hero {
-    background-image: url("/images/mobile_crop.png");
-    background-position: center bottom; 
-    background-size: contain;
+    
+   background-size: 800px auto;
+   background-position: center bottom; 
+    
    }
 } 
 
