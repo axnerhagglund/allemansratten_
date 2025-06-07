@@ -5,11 +5,8 @@
     font-family: var(--font-outfit);
     background-image: url(/images/heroimage.png);
     background-position: center bottom;
-   background-size: contain;
-   background-repeat: no-repeat;
-   
-    
-    
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .hero-title-container {

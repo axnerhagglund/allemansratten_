@@ -108,9 +108,10 @@
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    background:var(--color-light-orange) ;
+    background:var(--color-green) ;
     font-weight: 600;
     font-family: var(--font-outfit);
+    font-size: 1.1rem;
 
 }
 
