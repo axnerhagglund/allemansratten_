@@ -4,13 +4,14 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 1rem 1rem;
-    border-bottom: 2px solid var(--color-dark-gray);
+    border-bottom: 2px solid #114E45;
+    background: #BEE0BB;
 }
 
 .ri-menu-4-line,
 .ri-close-line {
     font-size: 2.5rem;
-    color:var(--color-dark-gray);
+    color:#114E45;
 }
 
 .ri-menu-4-line:hover,
@@ -21,7 +22,7 @@
 .mobile-view-logo {
     font-family: var(--font-outfit);
     font-size: 2rem;
-    color:var(--color-dark-gray);
+    color:#114E45;
 }
 
 .overlay {
