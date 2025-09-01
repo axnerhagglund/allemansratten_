@@ -1,7 +1,4 @@
 .sectionTwo-container{
-    background-image: url(/images/forest_dramatic_stage_3.jpg);
-    min-height: 100vh;
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-color: blue;
+    
 }
