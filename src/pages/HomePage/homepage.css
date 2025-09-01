@@ -1,0 +1,41 @@
+.snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior:smooth;
+
+  scrollbar-width: none;
+   -ms-overflow-style: none; 
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none;               
+}
+.bg-intro{
+    background: #BEE0BB;
+}
+
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.bg-one {
+  background: linear-gradient(to bottom, #0d1f12, #1a3c24);
+}
+
+.bg-two {
+  background: linear-gradient(to bottom, #1a3c24, #2e5938);
+}
+
+.bg-three {
+  background: linear-gradient(to bottom, #2e5938, #447a4d);
+}
+
+.bg-four {
+  background: linear-gradient(to bottom, #447a4d, #5c9b62);
+}

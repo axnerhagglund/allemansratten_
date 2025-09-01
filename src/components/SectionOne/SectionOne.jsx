@@ -4,7 +4,10 @@ function SectionOne() {
   return (
     
     <section className="sectionOne-container">
-      <h1>First some rules</h1>
+      <h1 className="sectionone-title">The right to be in nature </h1>
+      <p>
+        You can walk, cycle, camp and spend time almost everywhere in nature, even on private land aslong as u don't disturb or destroy 
+      </p>
     </section>
     
     
