@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background: var(--color-background--white);
+    background: var(--color-background);
 }
 
 :root {
@@ -20,6 +20,7 @@ body {
   --transparent-black : rgba(0, 0, 0, 0.2);
   --color-background--white: #FDFBF6;
   --color-light-orange:#F9B689 ;
+  --color-background:#BEE0BB;
 }
 
 .links {
