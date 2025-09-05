@@ -7,8 +7,9 @@
     flex-direction: column;
     align-items: center;
     font-family: var(--font-outfit);
-    padding-bottom: 10rem;
+    justify-content: center;
     font-family: var(--font-outfit);
+    padding-bottom: 12rem;
     
 }
 
