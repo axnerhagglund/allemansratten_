@@ -19,6 +19,9 @@
     color: var(--color-dark-gray);
     margin-top: 3rem;
 }
+.hero__title>span{
+    border-bottom:2px solid #114E45 ;
+}
 
 .ri-arrow-down-s-line.black{
     color:#114E45;

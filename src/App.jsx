@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage/HomePage"
 import AboutusPage from "./pages/AboutUsPage/AboutusPage"
 import Layout from "./components/LayoutRouting/Layout"
 import OurGoalPage from "./pages/OurGoalPage/OurGoalPage"
+import AllemansrattenPage from "./pages/AllemansrattenPage/AllemansrattenPage"
 function App() {
 
 
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<HomePage/>}/>
           <Route path="/about" element={<AboutusPage/>}/>
           <Route path="/vårtmål" element={<OurGoalPage/>}/>
+          <Route path="allemansratten" element={<AllemansrattenPage/>}/>
         </Route>
       </Routes>
    </Router>
