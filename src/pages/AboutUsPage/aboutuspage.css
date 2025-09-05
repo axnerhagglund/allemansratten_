@@ -1,0 +1,43 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+
+.about__h1 {
+    font-family: "outfit";
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(1, 56, 1);
+}
+
+.lu-tree {
+    color: rgb(135, 201, 135);
+    font-size: 8rem;
+    z-index: -1;
+    margin-left: -9rem;
+    margin-top: -6rem;
+}
+
+.about__sub{
+    max-width: 300px;
+    margin-top: 2rem;
+}
+
+.about__sub-p {
+    font-size: 1.2rem;
+    font-family: "outfit";
+    line-height: 1.4;
+    color: rgb(5, 43, 5);
+    font-weight: 500;
+}
