@@ -6,7 +6,9 @@
     padding: 1rem 1rem;
     border-bottom: 2px solid #114E45;
     background: #BEE0BB;
-    z-index: 11111111;
+    z-index: 121212;
+    position: fixed;
+    width: 100%;
 }
 
 .ri-menu-4-line,
@@ -39,8 +41,9 @@
   visibility: hidden;
   transform: translate(-50%, 100%);
   transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
-  z-index: 999;
+  z-index: 9999999;
   border-radius: 2px;
+  
     
 }
 
