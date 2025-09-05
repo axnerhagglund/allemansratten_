@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "./navbar.css"
 import { useEffect, useState } from "react"
+import { useLocation } from "react-router-dom"
 function NavBar() {
 
     const [ isOpen, setIsOpen ] = useState(false)
@@ -15,13 +16,22 @@ function NavBar() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize)
     },[])
+    function scrollToTop() {
+        const {pathname} = useLocation()
+        console.log(pathname)
+        useEffect(() => {
+            window.scrollTo(0,0)
+        },[pathname])
+        return null
+    }
+
     
   return (
     
     <>
      <section className="mobile-view">
-        <Link className="links" to={"/"}>
-        <h1 className="mobile-view-logo">Logo</h1>
+        <Link onClick={scrollToTop} className="links" to={"/"}>
+        <h1 className="mobile-view-logo">Allemansrätten</h1>
         </Link>
         {screenWidth > 900 ? 
         <div  className="desktop__menu">
@@ -51,7 +61,7 @@ function NavBar() {
                 <li className="overlay__list-item">Hem</li>
                 </Link>
                 <Link onClick={toggleview} className="links"  to={"/about"}>
-                <a className="overlay__list-item">Om oss</a>
+                <li className="overlay__list-item">Om oss</li>
                 </Link>
                 <Link onClick={toggleview}  className="links" to={"/vårtmål"}>
                 <li className="overlay__list-item">Vårt mål</li>

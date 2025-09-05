@@ -22,7 +22,7 @@
 
 .mobile-view-logo {
     font-family: var(--font-outfit);
-    font-size: 2rem;
+    font-size: 1.4rem;
     color:#114E45;
 }
 
@@ -62,14 +62,14 @@
 .ri-arrow-right-s-line {
     font-size: 2rem;
     align-self: center;
-    color: var(--color-light-blue);
+    color: #BEE0BB;
     cursor: pointer;
 }
 .overlay__list-item {
     font-family:var(--font-outfit);
     font-weight: 600;
     font-size: 1.4rem;
-    color: var(--color-light-blue);
+    color: #BEE0BB;
 }
 
 .backdrop {
