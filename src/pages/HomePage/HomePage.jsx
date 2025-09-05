@@ -7,6 +7,7 @@ import SectionTwo from "../../components/SectionTwo/SectionTwo"
 import SectionThree from "../../components/SectionThree/SectionThree"
 import SectionFour from "../../components/SectionFour/SectionFour"
 import "./homepage.css"
+import LearnMoreButton from "../../components/Buttons/LearnMoreButton/LearnMoreButton"
 
 function ScrollSection({children}){
   const controls = useAnimation()
@@ -65,8 +66,6 @@ function HomePage() {
         </ScrollSection>
       </section>
       
-      
-
     </section>
     
     </>

@@ -1,4 +1,5 @@
 
+import LearnMoreButton from "../Buttons/LearnMoreButton/LearnMoreButton"
 import "./sectionone.css"
 function SectionOne() {
   return (
@@ -8,6 +9,7 @@ function SectionOne() {
       <p>
         You can walk, cycle, camp and spend time almost everywhere in nature, even on private land aslong as u don't disturb or destroy 
       </p>
+      <LearnMoreButton />
     
     </section>
     
