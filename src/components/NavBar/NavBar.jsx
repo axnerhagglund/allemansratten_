@@ -57,7 +57,7 @@ function NavBar() {
             
             <ul className="overlay__list">
                 <i onClick={toggleview} className={screenWidth < 675 ? "ri-arrow-down-s-line" :"ri-arrow-right-s-line"}></i>    
-                <Link onClick={toggleview} className="links" to={"/"}>
+                <Link onClick={() => {toggleview(); scrollToTop()}} className="links" to={"/"}>
                 <li className="overlay__list-item">home</li>
                 </Link>
                 <Link onClick={toggleview} className="links"  to={"/about"}>
