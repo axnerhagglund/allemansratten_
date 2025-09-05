@@ -6,6 +6,7 @@
     padding: 1rem 1rem;
     border-bottom: 2px solid #114E45;
     background: #BEE0BB;
+    z-index: 11111111;
 }
 
 .ri-menu-4-line,

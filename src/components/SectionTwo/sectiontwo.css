@@ -1,4 +1,17 @@
 .sectionTwo-container{
-    background-color: blue;
+    color: white;
+    font-family: "Outfit";
+    max-width: 500px;
     
+}
+
+.sectionTwo-container>h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.sectionTwo-container>p{
+    font-size: 1.2rem;
+    line-height: 1.6;
 }

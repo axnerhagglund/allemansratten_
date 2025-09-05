@@ -23,9 +23,9 @@ function ScrollSection({children}){
       animate={controls}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 40 }
+        hidden: { opacity: 0, y: 50 }
       }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.8 }}
       className="section1"
     >
       {children}
@@ -65,12 +65,7 @@ function HomePage() {
         </ScrollSection>
       </section>
       
-      <section className="snap-section bg-four">
-        <ScrollSection>
-          <SectionFour/>
-        </ScrollSection>
-        
-      </section>
+      
 
     </section>
     
