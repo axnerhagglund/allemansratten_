@@ -1,8 +1,9 @@
+import Allemansratten from "../AllemansrattenPage/AllemansrattenPage"
 import "./ourgoalpage.css"
 
 function OurGoalPage() {
   return (
-    <div>OurGoalPage</div>
+    <Allemansratten/>
   )
 }
 
