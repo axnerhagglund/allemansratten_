@@ -1,4 +1,4 @@
-import "./sectionThree.css"
+import "./sectionthree.css"
 
 import LearnMoreButton from "../Buttons/LearnMoreButton/LearnMoreButton"
 function SectionThree() {
